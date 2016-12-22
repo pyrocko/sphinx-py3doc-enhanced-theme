@@ -15,7 +15,9 @@
     {% if theme_googlewebfonturl %}
       <link rel="stylesheet" type="text/css"
         href="{{ theme_googlewebfonturl }}">
-
+    {% endif %}
+    {% if theme_fontawesome %}
+      <link rel="stylesheet" href="{{ theme_fontawesome }}">
     {% endif %}
 {% endblock %}
 

@@ -70,6 +70,8 @@ To get the original styling Python 3 docs have add this in you ``conf.py``:
         'linkcolor': '#0072AA',
         'visitedlinkcolor': '#6363bb',
         'extrastyling': False,
+        'googlewebfonturl': 'http://fonts.googleapis.com/css?family=Rubik+One|Kalam',
+        'fontawesome': 'https://use.fontawesome.com/d51e5252e5.js',
     }
     pygments_style = 'friendly'
 
