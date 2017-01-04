@@ -23,14 +23,14 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='sphinx-py3doc-enhanced-theme',
-    version='2.4.0',
+    name='sphinx-sleekcat-theme',
+    version='0.1.0',
     license='BSD',
-    description='A theme based on the theme of https://docs.python.org/3/ with some responsive enhancements.',
+    description='A theme based on the https://github.com/ionelmc/sphinx-py3doc-enhanced-theme',
     long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
-    author='Ionel Cristian Mărieș',
+    author='Pyrocko Developer Team',
     author_email='contact@ionelmc.ro',
-    url='https://github.com/ionelmc/sphinx-py3doc-enhanced-theme',
+    url='https://github.com/pyrocko/spinx-sleekcat-theme',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -56,7 +56,7 @@ setup(
     ],
     entry_points = {
         'sphinx_themes': [
-            'path = sphinx_py3doc_enhanced_theme:get_html_theme_path',
+            'path = sphinx_sleekcat_theme:get_html_theme_path',
         ]
     },
     keywords=[

@@ -31,7 +31,7 @@ Enhanced Sphinx theme (based on Python 3 docs)
     :alt: PyPI Package monthly downloads
     :target: https://pypi.python.org/pypi/sphinx-py3doc-enhanced-theme
 
-A theme based on the theme of https://docs.python.org/3/ with some responsive enhancements.
+A theme based on https://github.com/ionelmc/sphinx-py3doc-enhanced-theme 
 
 * Free software: BSD license
 
@@ -40,15 +40,15 @@ Installation
 
 ::
 
-    pip install sphinx_py3doc_enhanced_theme
+    pip install sphinx_sleekcat_theme
 
 Add this in your documentation's ``conf.py``:
 
 .. sourcecode:: python
 
-    import sphinx_py3doc_enhanced_theme
-    html_theme = "sphinx_py3doc_enhanced_theme"
-    html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
+    import sphinx_sleekcat_theme
+    html_theme = "sphinx_sleekcat_theme"
+    html_theme_path = [sphinx_sleekcat_theme.get_html_theme_path()]
 
 Customization
 =============
@@ -63,7 +63,7 @@ To get the original styling Python 3 docs have add this in you ``conf.py``:
 .. sourcecode:: python
 
     html_theme_options = {
-        'githuburl': 'https://github.com/ionelmc/sphinx-py3doc-enhanced-theme/',
+        'githuburl': 'https://github.com/pyrocko/pyrocko/',
         'bodyfont': '"Lucida Grande",Arial,sans-serif',
         'headfont': '"Lucida Grande",Arial,sans-serif',
         'codefont': 'monospace,sans-serif',
@@ -83,7 +83,7 @@ To have a custom favicon create a ``theme`` directory near your ``conf.py`` and 
 .. sourcecode:: ini
 
     [theme]
-    inherit = sphinx_py3doc_enhanced_theme
+    inherit = sphinx_sleekcat_theme
 
 Then create a ``favicon.png`` in the ``static`` directory.
 
@@ -91,9 +91,9 @@ And then edit your ``conf.py`` to have something like this:
 
 .. sourcecode:: python
 
-    import sphinx_py3doc_enhanced_theme
+    import sphinx_sleekcat_theme
     html_theme = "theme"
-    html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path(), "."]
+    html_theme_path = [sphinx_sleekcat_theme.get_html_theme_path(), "."]
 
 The final file structure should be like this::
 
