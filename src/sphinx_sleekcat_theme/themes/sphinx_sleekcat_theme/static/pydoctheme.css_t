@@ -72,6 +72,7 @@ div.body a.headerlink {
 div.body {
     color: #2e3436;
     padding: 20px;
+    background-color: transparent;
 }
 
 div.body img {
@@ -359,6 +360,15 @@ a code:hover {
     color: #0095C4;
 }
 
+div.related a {
+    color: #204a87;
+}
+
+
+div.body a:hover {
+    color: #204a87;
+}
+
 div.body pre {
     border: 1px solid #ddd;
     background-color: #ffffff;
@@ -601,6 +611,21 @@ span.viewcode-link a:hover {
 dt:hover  span.viewcode-link,
 div.code-block-caption:hover  span.viewcode-link {
     visibility: visible;
+}
+
+div.keywords span {
+	border: 1px solid #e6e6e6;
+	padding: 0.05em 0.3em;
+	display: inline-block;
+	margin: 2px;
+	border-radius: 3px;
+	background-color: #fbfbfb;
+	color: #333;
+	font-size: 90%;
+}
+div.keywords {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 {% if theme_appendcss %}
