@@ -613,19 +613,29 @@ div.code-block-caption:hover  span.viewcode-link {
     visibility: visible;
 }
 
-div.keywords span {
+div.keywords span, span.tag {
 	border: 1px solid #e6e6e6;
 	padding: 0.05em 0.3em;
 	display: inline-block;
-	margin: 2px;
+	margin: .5em 0em;
 	border-radius: 3px;
 	background-color: #fbfbfb;
 	color: #333;
 	font-size: 90%;
 }
+
 div.keywords {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+span.tag {
+    background-color: #e9e9e9;
+    padding: 2px 4px;
+}
+
+span.tag i.fa {
+    padding-right: .4em;
 }
 
 {% if theme_appendcss %}
