@@ -3,7 +3,7 @@ a tt {
     font-weight: normal;
 }
 body {
-    background-color: rgb(236, 233, 218);
+    background-color: rgb(237, 236, 231);
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -22,10 +22,6 @@ div.related ul {
 
 div.related:first-child {
     border-bottom: 0;
-}
-
-div.related a:hover {
-    color: #0095C4;
 }
 
 div.sphinxsidebar {
@@ -360,6 +356,11 @@ a code:hover {
 }
 
 div.related a {
+    color: #204a87;
+    font-weight: bold;
+}
+
+div.related a:hover {
     color: #204a87;
 }
 
