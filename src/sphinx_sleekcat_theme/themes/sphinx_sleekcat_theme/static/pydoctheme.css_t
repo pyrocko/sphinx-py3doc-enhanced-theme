@@ -615,11 +615,11 @@ div.code-block-caption:hover  span.viewcode-link {
 
 div.keywords span, span.tag {
 	border: 1px solid #cfbc9b;
-	padding: 0.05em 0.3em;
+	padding: 0.075em 0.3em;
 	display: inline-block;
-	margin: .5em 0em;
+	margin: .5em .1em;
 	border-radius: 3px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 	background-color: #f2e6ca;
 	color: #333;
 	font-size: 90%;
