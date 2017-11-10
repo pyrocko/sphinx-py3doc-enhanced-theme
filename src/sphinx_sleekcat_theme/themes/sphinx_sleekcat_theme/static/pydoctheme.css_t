@@ -189,7 +189,7 @@ div.body tt.xref, div.body a tt {
 pre, table {
     text-shadow: 1px 1px 1px rgba(221, 221, 221, 0.6);
     box-shadow: 0px 0px 2px rgba(225, 225, 220, 0.6);
-}  
+}
 
 table.docutils {
     min-width: 20%;
@@ -293,11 +293,6 @@ div.body img {
     box-shadow: none;
 }
 
-div.highlight pre {
-    background-color: #fbf6e6;
-    border: 1px solid #e4dbbf;
-}
-
 div.sphinxsidebar {
     display: none;
 }
@@ -310,14 +305,11 @@ dl.function:last-child, dl.class:last-child, dl.exception:last-child {
     border-bottom: none;
 }
 
-dl.method, dl.attribute, dl.gattribute, dl.classmethod, dl.staticmethod {   
+dl.method, dl.attribute, dl.gattribute, dl.classmethod, dl.staticmethod {
     border-top: 1px solid #f0f0f0;
     padding-top: 15px;
 }
 
-div.highlight pre {
-    background-color: #fbf6e6 !important;
-}
 
 div.footer {
     width: 100%;
@@ -632,6 +624,34 @@ div.keywords {
 span.tag i.fa {
     padding-right: .4em;
 }
+
+div.highlight pre {
+    background-color: #fbf6e6;
+    border: 1px solid #e4dbbf;
+    border-radius: 3px;
+}
+
+div.literal-block-wrapper {
+    padding: 0px;
+}
+
+div.literal-block-wrapper div.code-block-caption {
+    color: #333333;
+    border: 1px solid #e4dbbf;
+    border-bottom: 1px dashed #c2b796;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #fbf6e6;
+    background-color: #ede6cf;
+    box-shadow: 1px 1px 3px #efefef;
+}
+
+div.literal-block-wrapper pre {
+    border-top-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
 
 {% if theme_appendcss %}
 /* appendcss: */
