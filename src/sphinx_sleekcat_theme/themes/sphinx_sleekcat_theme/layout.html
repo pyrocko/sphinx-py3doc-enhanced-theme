@@ -12,12 +12,30 @@
       <script type="text/javascript" src="{{ pathto('_static/copybutton.js', 1) }}"></script>
     {% endif %}
     {% if theme_googlewebfonturl %}
-      <link rel="stylesheet" type="text/css"
-        href="{{ theme_googlewebfonturl }}">
+      <link rel="stylesheet" type="text/css" href="{{ theme_googlewebfonturl }}">
     {% endif %}
     {% if theme_fontawesome %}
       <script src="{{ theme_fontawesome }}"></script>
     {% endif %}
+    <script type="text/javascript" src="{{ pathto('_static/jquery.gifplayer.js', 1) }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/gifplayer.css', 1) }}">
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//pyrocko.org/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript>
+    <img src="https://pyrocko.org/piwik/piwik.php?idsite=1&rec=1" style="border:0" alt="" />
+    </noscript>
 {% endblock %}
 
 {%- block sidebarlogo %}

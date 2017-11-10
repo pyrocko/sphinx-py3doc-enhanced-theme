@@ -2,6 +2,10 @@
 Enhanced Sphinx theme (based on Python 3 docs)
 ==============================================
 
+Theme customized for https://pyrocko.org
+
+!! Includes pyrocko piwik tracking code !!
+
 .. list-table::
     :stub-columns: 1
 
