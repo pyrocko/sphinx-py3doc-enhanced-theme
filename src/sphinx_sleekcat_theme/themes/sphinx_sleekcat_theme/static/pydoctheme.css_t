@@ -2,6 +2,7 @@
 a tt {
     font-weight: normal;
 }
+
 body {
     background-color: rgb(237, 236, 231);
     max-width: 1000px;
@@ -467,10 +468,18 @@ div.sphinxsidebarwrapper > ul > li > ul > li {
 div.related {
     line-height: normal;
 }
+
 div.related li.responsive-menu {
     display: none;
     margin-right: 5px;
 }
+
+div.related ul {
+    display: block;
+    padding-left: 5px;
+    margin: 5px;
+}
+
 div.related li.responsive-menu a {
     font-size: 200%;
     background: #00B0E4;
@@ -478,10 +487,13 @@ div.related li.responsive-menu a {
     border-radius: 3px;
     padding: 0 4px;
 }
+
 div.related li.responsive-menu a:hover {
     text-decoration: none;
     color: #30306f;
 }
+
+
 div.related li {
     vertical-align: middle;
 }
@@ -493,6 +505,7 @@ li.right {
 div.related:first-child li.right {
     display: none;
 }
+
 
 {% if theme_sidebarwide|tobool %}
     div.sphinxsidebar {
@@ -657,3 +670,12 @@ div.literal-block-wrapper pre {
 /* appendcss: */
 {{ theme_appendcss }}
 {% endif %}
+
+img.pyrocko-button {
+    height: 24px;
+    cursor: pointer;
+    box-shadow: none;
+    display: inline;
+    margin: 0;
+    padding-right: 5px;
+}

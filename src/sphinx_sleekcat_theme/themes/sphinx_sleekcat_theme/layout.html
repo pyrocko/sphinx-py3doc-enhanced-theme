@@ -44,21 +44,29 @@
 {% endblock %}
 
 {%- block relbar1 %}
+{% if shorttitle|e != 'pyrocko.org' %}
     <div class="related">
       <h3>{{ _('Navigation') }}</h3>
-      <ul>
-        {%- block rootrellink %}
-        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
-        <li>
-          <a href="https://pyrocko.org" title="pyrocko.org">pyrocko.org</a>{{ reldelim1 }}
-        </li>
-        {% if shorttitle|e != 'pyrocko.org' %}<li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>{% endif %}
-        {%- endblock %}
-        {%- for parent in parents %}
-          <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
-        {%- endfor %}
-        {%- block relbaritems %} {% endblock %}
-      </ul>
+        <ul>
+          {%- block rootrellink %}
+          <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+          <li>
+            <img src='https://pyrocko.org/_static/pyrocko.svg' class='pyrocko-button' onclick="window.location = 'https://pyrocko.org';">
+          </li>
+          <li>
+            <a href="https://pyrocko.org" title="pyrocko.org">
+              pyrocko.org</a>{{ reldelim1 }}
+          </li>
+          <li>
+              <a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}
+          </li>
+          {%- endblock %}
+
+          {%- for parent in parents %}
+            <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
+          {%- endfor %}
+          {%- block relbaritems %} {% endblock %}
+        </ul>
     </div>
     {% if theme_githuburl %}
         <div class="badge">
@@ -66,6 +74,7 @@
             <img src="{{ pathto('_static/right-red@2x.png', 1) }}">
         </div>
     {% endif %}
+{% endif %}
 {% endblock %}
 
 {%- block relbar2 %}
