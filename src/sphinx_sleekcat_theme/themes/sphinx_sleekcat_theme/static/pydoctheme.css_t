@@ -124,7 +124,7 @@ div.body a:hover {
 }
 
 div.body > div.section > div.section {
-    margin-top: 1em;
+    margin-top: 2em;
     border-top: 1px solid #d5d3c9;
 }
 
