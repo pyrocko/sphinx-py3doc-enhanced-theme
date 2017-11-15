@@ -672,7 +672,7 @@ div.literal-block-wrapper pre {
 {% endif %}
 
 img.pyrocko-button {
-    height: 24px;
+    height: 28px;
     cursor: pointer;
     box-shadow: none;
     display: inline;
