@@ -123,6 +123,11 @@ div.body a:hover {
     color: #00B0E4;
 }
 
+div.body > div.section > div.section {
+    margin-top: 1em;
+    border-top: 1px solid #d5d3c9;
+}
+
 div.body .section:target > h1,
 div.body .section:target > h2,
 div.body .section:target > h3,
