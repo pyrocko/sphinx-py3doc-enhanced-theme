@@ -68,6 +68,7 @@ div.body a.headerlink {
 div.body {
     color: #2e3436;
     background-color: transparent;
+    padding: 15px 20px 30px 20px;
 }
 
 div.body img {
