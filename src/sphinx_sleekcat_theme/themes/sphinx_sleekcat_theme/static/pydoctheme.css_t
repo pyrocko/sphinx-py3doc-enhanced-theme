@@ -5,6 +5,11 @@ a tt {
 
 body {
     background-color: rgb(237, 236, 231);
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
