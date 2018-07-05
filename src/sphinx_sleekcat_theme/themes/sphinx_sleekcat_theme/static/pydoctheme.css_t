@@ -61,6 +61,11 @@ div.sphinxsidebar input[type=text] {
     max-width: 150px;
 }
 
+
+div.body {
+    max-width: unset;
+}
+
 div.body a.headerlink {
     color: #bfd0e6;
 }
