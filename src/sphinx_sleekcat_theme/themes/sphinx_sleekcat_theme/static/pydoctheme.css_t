@@ -697,3 +697,7 @@ img.pyrocko-button {
     margin: 0;
     padding-right: 5px;
 }
+
+dl.option {
+    display: none;
+}
