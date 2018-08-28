@@ -697,3 +697,9 @@ img.pyrocko-button {
     margin: 0;
     padding-right: 5px;
 }
+
+span.std-term {
+    cursor: help;
+    color: #2e3436 !important;
+    text-decoration: underline dashed #aaa !important;
+}
