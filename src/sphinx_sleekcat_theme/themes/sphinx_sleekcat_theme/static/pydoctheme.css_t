@@ -703,3 +703,7 @@ span.std-term {
     color: #2e3436 !important;
     text-decoration: underline dashed #aaa !important;
 }
+
+dl.option {
+    display: none;
+}
