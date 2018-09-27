@@ -10,7 +10,7 @@ class GAttributePyClassmember(pdom.PyClassmember):
 
 
 pdom.PythonDomain.object_types['gattribute'] = pdom.ObjType(
-    pdom.l_('gattribute'), 'gattr', 'obj')
+    GAttributePyClassmember)
 pdom.PythonDomain.directives['gattribute'] = GAttributePyClassmember
 pdom.PythonDomain.roles['gattr'] = pdom.PyXRefRole()
 
